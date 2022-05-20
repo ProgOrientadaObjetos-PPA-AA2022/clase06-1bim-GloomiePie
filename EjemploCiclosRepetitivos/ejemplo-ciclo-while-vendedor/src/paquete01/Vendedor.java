@@ -44,6 +44,7 @@ public class Vendedor {
     }
 
     public void establecerNumeroAutos(int s) {
+        
         numeroAutos = s;
     }
 

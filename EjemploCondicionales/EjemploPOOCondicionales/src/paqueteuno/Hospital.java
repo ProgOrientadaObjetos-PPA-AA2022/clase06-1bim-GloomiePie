@@ -92,7 +92,20 @@ public class Hospital {
     public double obtenerPresupuestoAnual(){
         return presupuestoAnual;
     }
-    
+    public String toString(){
+        String cadena = String.format("\"Datos Hospital\\n\"\n" 
+                   + "Nombre del hospital: %s\\n\"\n"
+                  + "Ciudad del hospital: %s\\n\"\n" 
+                  + "Número de camas: %d\\n\"\n" 
+                  + "Número de doctores: %d\\n\"\n" 
+                   + "Presupuesto anual: %.2f\\n\",\n" +
+                   obtenerNombreHospital(),"\n" +
+                  obtenerCiudadHospital(),"\n" +
+                   obtenerNumeroCamas(),"\n" +
+                  hosp1.obtenerNumeroDoctores(),"\n" +
+                   hosp1.obtenerPresupuestoAnual());
+        return cadena;
+    }
     
     
     
